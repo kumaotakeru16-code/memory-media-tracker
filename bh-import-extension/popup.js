@@ -1,4 +1,4 @@
-const IMPORT_PAGE_URL = 'http://localhost:3000/';
+const IMPORT_PAGE_URL = 'https://memory-media-tracker-o9qx.vercel.app/';
 const statusEl = document.getElementById('status');
 const importBtn = document.getElementById('importBtn');
 
