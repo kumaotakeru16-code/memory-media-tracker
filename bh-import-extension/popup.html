@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>B&H Import</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 280px;
+        margin: 0;
+        padding: 16px;
+      }
+      button {
+        width: 100%;
+        border: 0;
+        border-radius: 12px;
+        padding: 10px 12px;
+        background: #111;
+        color: #fff;
+        cursor: pointer;
+      }
+      .note {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #666;
+        line-height: 1.5;
+      }
+      .status {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #333;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="importBtn">このページを取り込む</button>
+    <div class="note">B&Hの商品ページを開いた状態で実行してください。</div>
+    <div id="status" class="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

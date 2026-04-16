@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "B&H Snapshot Importer",
+  "version": "1.0.0",
+  "description": "Import B&H page HTML into localhost price tracker",
+  "permissions": ["activeTab", "scripting", "tabs", "storage"],
+  "host_permissions": [
+    "https://www.bhphotovideo.com/*",
+    "https://bhphotovideo.com/*",
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://localhost:3000/*"],
+      "js": ["import-bridge.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
